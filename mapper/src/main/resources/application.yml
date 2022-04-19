@@ -1,0 +1,18 @@
+server:
+  port: 7890
+
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/fmmall?characterEncoding=utf-8
+      username: root
+      password: 4444dwhsqj
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+
+mybatis:
+  mapper-locations: classpath:mappers/*.xml
+  type-aliases-package: com.yokau.fmmall.entity
+
