@@ -7,4 +7,6 @@ import com.yokau.fmmall.vo.ResultVO;
 public interface CategoryService {
 
     ResultVO listCategories();
+
+    ResultVO listFirstLevelCategories();
 }

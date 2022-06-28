@@ -5,6 +5,7 @@ import com.yokau.fmmall.entity.ProductVO;
 import com.yokau.fmmall.service.ProductService;
 import com.yokau.fmmall.vo.ResStatus;
 import com.yokau.fmmall.vo.ResultVO;
+import io.swagger.annotations.Example;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,5 +21,10 @@ public class ProductServiceImpl implements ProductService {
         List<ProductVO> productVOS = productMapper.selectRecommendProducts();
         ResultVO resultVO = new ResultVO(ResStatus.OK, "SUCCESS", productVOS);
         return resultVO;
+    }
+
+    @Override
+    public ResultVO getProductBasicInfo(String productId) {
+        return null;
     }
 }

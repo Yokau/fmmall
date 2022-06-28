@@ -24,7 +24,7 @@ public class UserController {
 
     @ApiOperation("用户登录接口")
     @ApiImplicitParams({
-            @ApiImplicitParam(dataType = "String", name = "userName", value = "用户登录账号", required = true),
+            @ApiImplicitParam(dataType = "String", name = "username", value = "用户登录账号", required = true),
             @ApiImplicitParam(dataType = "String", name = "password", value = "用户登录密码", required = true)
     })
     @GetMapping("/login")
