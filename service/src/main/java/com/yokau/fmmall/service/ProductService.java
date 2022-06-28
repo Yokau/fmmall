@@ -6,4 +6,8 @@ public interface ProductService {
     ResultVO listRecommendProducts();
 
     ResultVO getProductBasicInfo(String productId);
+
+    public ResultVO getProductParamsById(String productId);
+
+
 }
