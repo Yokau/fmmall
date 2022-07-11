@@ -3,7 +3,6 @@ package com.yokau.fmmall.service.impl;
 import com.yokau.fmmall.dao.UsersMapper;
 import com.yokau.fmmall.entity.Users;
 import com.yokau.fmmall.service.UsersService;
-import com.yokau.fmmall.utils.Base64Utils;
 import com.yokau.fmmall.utils.MD5Utils;
 import com.yokau.fmmall.vo.ResStatus;
 import com.yokau.fmmall.vo.ResultVO;
