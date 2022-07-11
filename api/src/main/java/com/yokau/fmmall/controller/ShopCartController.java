@@ -1,14 +1,14 @@
 package com.yokau.fmmall.controller;
 
 
+import com.yokau.fmmall.entity.ShoppingCart;
+import com.yokau.fmmall.service.ShoppingCartService;
 import com.yokau.fmmall.vo.ResultVO;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 
 @RestController
@@ -17,11 +17,35 @@ import org.springframework.web.bind.annotation.RestController;
 @Api(value = "提供购物车业务相关接口", tags = "购物车管理")
 public class ShopCartController {
 
+    @Autowired
+    private ShoppingCartService shoppingCartService;
+
+    @PostMapping("/add")
+    public ResultVO addShoppingCart(@RequestBody ShoppingCart cart, @RequestHeader("token") String token) {
+        ResultVO resultVO = shoppingCartService.addShoppingCart(cart);
+        return resultVO;
+    }
+
     @GetMapping("/list")
-    @ApiImplicitParam(dataType = "String", name = "token", value = "token授权令牌", required = true)
-    public ResultVO listCarts(Integer userId) {
-        System.out.println("userId: "+ userId);
-        return null;
+    @ApiImplicitParam(dataType = "int", name = "userId", value = "用户ID", required = true)
+    public ResultVO list(Integer userId, @RequestHeader("token") String token) {
+        ResultVO resultVO = shoppingCartService.listShoppingCartsByUserId(userId);
+        return resultVO;
+    }
+
+    @PutMapping("/update/{cid}/{cnum}")
+    public ResultVO updateNum(@PathVariable("cid") Integer cartId,
+                              @PathVariable("cnum") Integer cartNum,
+                              @RequestHeader("token") String token) {
+        ResultVO resultVO = shoppingCartService.updateCartNum(cartId, cartNum);
+        return resultVO;
+    }
+
+    @GetMapping("/listbycids")
+    @ApiImplicitParam(dataType = "String", name = "cids", value = "选择的购物车记录的id", required = true)
+    public ResultVO listByCids(String cids, @RequestHeader("token") String token) {
+        ResultVO resultVO = shoppingCartService.listShoppingCartsByCids(cids);
+        return resultVO;
     }
 
 

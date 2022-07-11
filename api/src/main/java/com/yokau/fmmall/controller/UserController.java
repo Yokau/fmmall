@@ -2,6 +2,7 @@ package com.yokau.fmmall.controller;
 
 import com.yokau.fmmall.entity.Users;
 import com.yokau.fmmall.service.UsersService;
+import com.yokau.fmmall.vo.ResStatus;
 import com.yokau.fmmall.vo.ResultVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -48,5 +49,11 @@ public class UserController {
     @PostMapping("/register")
     public ResultVO register(@RequestBody Users user) {
         return usersService.usersRegister(user.getUsername(), user.getPassword());
+    }
+
+    @ApiOperation("校验token是否过期接口")
+    @GetMapping("/check")
+    public ResultVO userTokencheck(@RequestHeader("token") String token){
+        return new ResultVO(ResStatus.OK,"success",null);
     }
 }

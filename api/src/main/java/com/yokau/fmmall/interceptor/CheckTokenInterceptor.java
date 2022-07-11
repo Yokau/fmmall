@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.servlet.HandlerInterceptor;
 
+import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -19,12 +20,13 @@ public class CheckTokenInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         String method = request.getMethod();
-        if("OPTIONS".equalsIgnoreCase(method)){
+        if ("OPTIONS".equalsIgnoreCase(method)) {
             return true;
         }
         String token = request.getHeader("token");
+        System.out.println("TOKEN: " + token);
         if (token == null || token.equals("")) {
-            ResultVO resultVO = new ResultVO(ResStatus.NO, "请先登录！", null);
+            ResultVO resultVO = new ResultVO(ResStatus.LOGIN_FAIL_NOT, "请先登录！", null);
             //提示请先登录
             doResponse(response, resultVO);
         } else {
@@ -42,17 +44,17 @@ public class CheckTokenInterceptor implements HandlerInterceptor {
 //                String subject = claimsJwsBody.getSubject(); //获取生成token设置的subject
 //                Object value1 = claimsJwsBody.get("key1", String.class);  //获取生成token时存储的Claims的map中的值
 
-                ResultVO resultVO = new ResultVO(ResStatus.OK, "success", null);
-                doResponse(response, resultVO);
+//                ResultVO resultVO = new ResultVO(ResStatus.OK, "SUCCESS", null);
+//                doResponse(response, resultVO);
                 return true;
-            }catch (ExpiredJwtException e){
-                ResultVO resultVO = new ResultVO(ResStatus.NO, "登录过期，请重新登录！", null);
+            } catch (ExpiredJwtException e) {
+                ResultVO resultVO = new ResultVO(ResStatus.LOGIN_FAIL_TIMEOUT, "登录过期，请重新登录！", null);
                 doResponse(response, resultVO);
-            }catch (UnsupportedJwtException e){
-                ResultVO resultVO = new ResultVO(ResStatus.NO, "Token非法，请自重！", null);
+            } catch (UnsupportedJwtException e) {
+                ResultVO resultVO = new ResultVO(ResStatus.LOGIN_FAIL_NOT, "Token非法！", null);
                 doResponse(response, resultVO);
-            }catch (Exception e){
-                ResultVO resultVO = new ResultVO(ResStatus.NO, "请重新登录", null);
+            } catch (Exception e) {
+                ResultVO resultVO = new ResultVO(ResStatus.LOGIN_FAIL_NOT, "请重新登录", null);
                 doResponse(response, resultVO);
             }
 
@@ -60,6 +62,7 @@ public class CheckTokenInterceptor implements HandlerInterceptor {
         return false;
 
     }
+
     private void doResponse(HttpServletResponse response, ResultVO resultVO) throws IOException {
         response.setContentType("application/json");
         response.setCharacterEncoding("utf-8");

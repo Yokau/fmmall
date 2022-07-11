@@ -82,7 +82,55 @@ public class ProductServiceImpl implements ProductService {
         }
     }
 
+    @Override
+    public ResultVO getProductsByCategoryId(Integer categoryId, Integer pageNum, Integer limit) {
+        //1.查询分页数据
+        int start = (pageNum - 1) * limit;
+        List<ProductVO> productVOS = productMapper.selectProductByCategoryId(categoryId, start, limit);
+        //2.查询当前类别下的商品的总记录数
+        Example example = new Example(Product.class);
+        Example.Criteria criteria = example.createCriteria();
+        criteria.andEqualTo("categoryId", categoryId);
+        int count = productMapper.selectCountByExample(example);
+        //3.计算总页数
+        int pageCount = count % limit == 0 ? count / limit : count / limit + 1;
+        //4.封装返回数据
+        PageHelper<ProductVO> pageHelper = new PageHelper<>(count, pageCount, productVOS);
+        return new ResultVO(ResStatus.OK, "SUCCESS", pageHelper);
+    }
 
+    @Override
+    public ResultVO listBrands(Integer categoryId) {
+        List<String> brands = productMapper.selectBrandByCategoryId(categoryId);
+        return new ResultVO(ResStatus.OK, "success", brands);
+    }
 
+    @Override
+    public ResultVO searchProduct(String kw, Integer pageNum, Integer limit) {
+        //1.查询搜索结果
+        kw = "%" + kw + "%";
+        int start = (pageNum - 1) * limit;
+        List<ProductVO> productVOS = productMapper.selectProductByKeyword(kw, start, limit);
 
+        //2.查询总记录数
+        Example example = new Example(Product.class);
+        Example.Criteria criteria = example.createCriteria();
+        criteria.andLike("productName", kw);
+        int count = productMapper.selectCountByExample(example);
+
+        //3.计算总页数
+        int pageCount = count % limit == 0 ? count / limit : count / limit + 1;
+
+        //4.封装，返回数据
+        PageHelper<ProductVO> pageHelper = new PageHelper<>(count, pageCount, productVOS);
+        ResultVO resultVO = new ResultVO(ResStatus.OK, "SUCCESS", pageHelper);
+        return resultVO;
+    }
+
+    @Override
+    public ResultVO listBrands(String kw) {
+        kw = "%" + kw + "%";
+        List<String> brands = productMapper.selectBrandByKeyword(kw);
+        return new ResultVO(ResStatus.OK, "SUCCESS", brands);
+    }
 }
