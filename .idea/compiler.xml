@@ -11,10 +11,12 @@
         <module name="api" />
         <module name="common" />
         <module name="service" />
-        <module name="tkmapper" />
         <module name="beans" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tkmapper" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

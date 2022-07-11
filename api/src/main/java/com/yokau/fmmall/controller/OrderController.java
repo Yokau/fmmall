@@ -44,7 +44,7 @@ public class OrderController {
                 data.put("total_fee", "1");
                 data.put("trade_type", "NATIVE");                //交易类型
 //                data.put("notify_url", "http://47.118.45.73:8080/pay/callback");          //设置支付完成时的回调方法接口
-                data.put("notify_url", "https://29c9-2408-8438-7331-b431-3866-132b-6573-a085.jp.ngrok.io/pay/callback");          //设置支付完成时的回调方法接口
+                data.put("notify_url", "http://120.48.16.107:7890/pay/callback");          //设置支付完成时的回调方法接口
 
                 //发送请求，获取响应
                 //微信支付：申请支付连接
