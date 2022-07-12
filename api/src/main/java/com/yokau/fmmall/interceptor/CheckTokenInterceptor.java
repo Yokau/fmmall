@@ -5,15 +5,12 @@ import com.yokau.fmmall.vo.ResStatus;
 import com.yokau.fmmall.vo.ResultVO;
 import io.jsonwebtoken.*;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.servlet.HandlerInterceptor;
 
-import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.lang.reflect.Method;
 
 @Component
 public class CheckTokenInterceptor implements HandlerInterceptor {

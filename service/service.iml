@@ -371,6 +371,21 @@ under the License.
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="mapper"/>
+    <orderEntry type="module" module-name="beans"/>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/lumi/CodeEnvironment/maven-repository/tk/mybatis/mapper/4.1.5/mapper-4.1.5.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/lumi/CodeEnvironment/maven-repository/javax/persistence/persistence-api/1.0/persistence-api-1.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -423,13 +438,6 @@ under the License.
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar:///Users/lumi/CodeEnvironment/maven-repository/javax/persistence/persistence-api/1.0/persistence-api-1.0.jar!/"/>
-        </CLASSES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
           <root url="jar:///Users/lumi/CodeEnvironment/maven-repository/tk/mybatis/mapper-base/1.1.5/mapper-base-1.1.5.jar!/"/>
         </CLASSES>
       </library>
@@ -459,14 +467,6 @@ under the License.
       <library>
         <CLASSES>
           <root url="jar:///Users/lumi/CodeEnvironment/maven-repository/tk/mybatis/mapper-spring-boot-autoconfigure/2.1.5/mapper-spring-boot-autoconfigure-2.1.5.jar!/"/>
-        </CLASSES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module" module-name="beans"/>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar:///Users/lumi/CodeEnvironment/maven-repository/tk/mybatis/mapper/4.1.5/mapper-4.1.5.jar!/"/>
         </CLASSES>
       </library>
     </orderEntry>

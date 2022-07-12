@@ -4,8 +4,8 @@ server:
 spring:
   datasource:
     druid:
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/fmmall?characterEncoding=utf-8
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://120.48.16.107:3306/fmmall?characterEncoding=utf-8
       username: root
       password: 4444dwhsqj
       initial-size: 1
