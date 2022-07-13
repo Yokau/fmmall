@@ -4,8 +4,9 @@ server:
 spring:
   datasource:
     druid:
-      driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://120.48.16.107:3306/fmmall?characterEncoding=utf-8
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      # url: jdbc:mysql://120.48.16.107:3306/fmmall?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false
+      url: jdbc:mysql://120.48.16.107:3306/fmmall?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&autoReconnect=true&failOverReadOnly=false
       username: root
       password: 4444dwhsqj
       initial-size: 1
@@ -24,4 +25,6 @@ mybatis:
 logging:
   level:
     io.swagger.models.parameters.AbstractSerializableParameter: error
+  config:
+    classpath: logback-spring.xml
 

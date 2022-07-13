@@ -1,0 +1,171 @@
+2022-07-12 23:11:04.322 [main] INFO  com.yokau.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_311 on LUMIs-MacBook-Pro.local with PID 40856 (/Users/lumi/Git/fmmall/api/target/classes started by lumi in /Users/lumi/Git/fmmall)
+2022-07-12 23:11:04.332 [main] INFO  com.yokau.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-12 23:11:05.904 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7890 (http)
+2022-07-12 23:11:05.912 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2022-07-12 23:11:05.913 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-12 23:11:05.913 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-12 23:11:06.070 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-12 23:11:06.071 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1641 ms
+2022-07-12 23:11:06.296 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-07-12 23:11:11.209 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-07-12 23:11:11.215 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-07-12 23:11:11.226 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-12 23:15:30.920 [main] INFO  com.yokau.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_311 on LUMIs-MacBook-Pro.local with PID 43687 (/Users/lumi/Git/fmmall/api/target/classes started by lumi in /Users/lumi/Git/fmmall)
+2022-07-12 23:15:30.925 [main] INFO  com.yokau.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-12 23:15:32.615 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7890 (http)
+2022-07-12 23:15:32.627 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2022-07-12 23:15:32.628 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-12 23:15:32.628 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-12 23:15:32.789 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-12 23:15:32.789 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1783 ms
+2022-07-12 23:15:32.990 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-07-12 23:15:37.850 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-07-12 23:15:37.857 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-07-12 23:15:37.871 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-12 23:16:44.786 [main] INFO  com.yokau.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_311 on LUMIs-MacBook-Pro.local with PID 44344 (/Users/lumi/Git/fmmall/api/target/classes started by lumi in /Users/lumi/Git/fmmall)
+2022-07-12 23:16:44.791 [main] INFO  com.yokau.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-12 23:16:47.852 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7890 (http)
+2022-07-12 23:16:47.870 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2022-07-12 23:16:47.871 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-12 23:16:47.871 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-12 23:16:48.143 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-12 23:16:48.143 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3241 ms
+2022-07-12 23:16:48.575 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-07-12 23:16:50.100 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-07-12 23:16:52.255 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-07-12 23:16:52.666 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-07-12 23:16:52.667 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-07-12 23:16:52.668 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-07-12 23:16:52.668 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-07-12 23:16:52.778 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2022-07-12 23:16:52.798 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-07-12 23:16:52.798 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2022-07-12 23:16:52.799 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2022-07-12 23:16:52.800 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-07-12 23:16:52.800 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-07-12 23:16:52.801 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2022-07-12 23:16:52.801 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3fcbc766
+2022-07-12 23:16:52.905 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7890"]
+2022-07-12 23:16:52.952 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7890 (http) with context path ''
+2022-07-12 23:16:52.955 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-07-12 23:16:52.993 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-07-12 23:16:53.048 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-07-12 23:16:53.335 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2022-07-12 23:16:53.371 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2022-07-12 23:16:53.372 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-07-12 23:16:53.396 [main] INFO  com.yokau.fmmall.ApiApplication - Started ApiApplication in 10.0 seconds (JVM running for 11.313)
+2022-07-12 23:17:17.029 [http-nio-7890-exec-3] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-12 23:17:17.030 [http-nio-7890-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-12 23:17:17.035 [http-nio-7890-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2022-07-12 23:17:42.680 [http-nio-7890-exec-3] INFO  com.yokau.fmmall.service.impl.OrderServiceImpl - add order begin...
+2022-07-12 23:17:42.762 [http-nio-7890-exec-3] INFO  com.yokau.fmmall.service.impl.OrderServiceImpl - product stock is OK...
+2022-07-12 23:17:43.643 [http-nio-7890-exec-3] INFO  com.yokau.fmmall.service.impl.OrderServiceImpl - add order finished...
+2022-07-12 23:19:24.890 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-07-12 23:19:25.910 [SpringApplicationShutdownHook] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2022-07-12 23:19:25.910 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-07-12 23:19:25.910 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-07-12 23:19:25.911 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-07-12 23:19:25.915 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2022-07-12 23:19:25.921 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-07-12 23:19:54.084 [main] INFO  com.yokau.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_311 on LUMIs-MacBook-Pro.local with PID 46129 (/Users/lumi/Git/fmmall/api/target/classes started by lumi in /Users/lumi/Git/fmmall)
+2022-07-12 23:19:54.087 [main] INFO  com.yokau.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-12 23:19:55.547 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7890 (http)
+2022-07-12 23:19:55.555 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2022-07-12 23:19:55.556 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-12 23:19:55.556 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-12 23:19:55.682 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-12 23:19:55.683 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1536 ms
+2022-07-12 23:19:55.831 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-07-12 23:19:56.747 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-07-12 23:19:57.816 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-07-12 23:19:58.053 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-07-12 23:19:58.054 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-07-12 23:19:58.054 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-07-12 23:19:58.054 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-07-12 23:19:58.112 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2022-07-12 23:19:58.121 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-07-12 23:19:58.121 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2022-07-12 23:19:58.122 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2022-07-12 23:19:58.123 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-07-12 23:19:58.123 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-07-12 23:19:58.123 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2022-07-12 23:19:58.123 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7dee835
+2022-07-12 23:19:58.183 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7890"]
+2022-07-12 23:19:58.215 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7890 (http) with context path ''
+2022-07-12 23:19:58.216 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-07-12 23:19:58.235 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-07-12 23:19:58.276 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-07-12 23:19:58.470 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2022-07-12 23:19:58.493 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2022-07-12 23:19:58.493 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-07-12 23:19:58.507 [main] INFO  com.yokau.fmmall.ApiApplication - Started ApiApplication in 4.959 seconds (JVM running for 5.502)
+2022-07-12 23:23:58.513 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-07-12 23:23:59.530 [SpringApplicationShutdownHook] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2022-07-12 23:23:59.530 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-07-12 23:23:59.530 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-07-12 23:23:59.531 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-07-12 23:23:59.534 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2022-07-12 23:23:59.537 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-07-12 23:24:05.096 [main] INFO  com.yokau.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_311 on LUMIs-MacBook-Pro.local with PID 48421 (/Users/lumi/Git/fmmall/api/target/classes started by lumi in /Users/lumi/Git/fmmall)
+2022-07-12 23:24:05.099 [main] INFO  com.yokau.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-12 23:24:06.981 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7890 (http)
+2022-07-12 23:24:06.989 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7890"]
+2022-07-12 23:24:06.990 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-12 23:24:06.990 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-12 23:24:07.108 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-12 23:24:07.108 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1931 ms
+2022-07-12 23:24:07.257 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-07-12 23:24:08.201 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-07-12 23:24:09.816 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-07-12 23:24:10.188 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-07-12 23:24:10.189 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-07-12 23:24:10.189 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-07-12 23:24:10.190 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2022-07-12 23:24:10.358 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2022-07-12 23:24:10.382 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-07-12 23:24:10.382 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2022-07-12 23:24:10.383 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2022-07-12 23:24:10.384 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-07-12 23:24:10.385 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-07-12 23:24:10.385 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2022-07-12 23:24:10.385 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7dee835
+2022-07-12 23:24:10.595 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7890"]
+2022-07-12 23:24:10.638 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 7890 (http) with context path ''
+2022-07-12 23:24:10.640 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-07-12 23:24:10.661 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-07-12 23:24:10.730 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-07-12 23:24:11.066 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2022-07-12 23:24:11.104 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2022-07-12 23:24:11.105 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-07-12 23:24:11.127 [main] INFO  com.yokau.fmmall.ApiApplication - Started ApiApplication in 6.599 seconds (JVM running for 7.291)
+2022-07-12 23:24:45.065 [http-nio-7890-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-12 23:24:45.066 [http-nio-7890-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-12 23:24:45.071 [http-nio-7890-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2022-07-12 23:24:46.006 [http-nio-7890-exec-1] INFO  com.yokau.fmmall.service.impl.OrderServiceImpl - add order begin...
+2022-07-12 23:24:46.157 [http-nio-7890-exec-1] INFO  com.yokau.fmmall.service.impl.OrderServiceImpl - product stock is OK...
+2022-07-12 23:24:46.462 [http-nio-7890-exec-1] INFO  com.yokau.fmmall.service.impl.OrderServiceImpl - add order finished...
